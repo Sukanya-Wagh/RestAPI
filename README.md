@@ -72,7 +72,10 @@ Fertilizer-Management-System/
 
 ## 📸 Backend Output
 
-(Add backend screenshot here)
+📸 **Backend Output**
+
+![Backend Output](https://github.com/user-attachments/assets/e9017408-3e01-46f6-b57b-c13a35dfcf5c)
+
 
 ---
 
