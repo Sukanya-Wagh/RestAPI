@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fertilizer Management System</title>
+  <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+
+  <div class="form-wrapper">
+    <form id="orderForm" class="form-container">
+      <h2>Fertilizer Order Form</h2>
+
+      <label for="farmerName">Farmer Name</label>
+      <input type="text" id="farmerName" required />
+
+      <label for="fertilizerType">Fertilizer Type</label>
+      <input type="text" id="fertilizerType" required />
+
+      <label for="quantity">Quantity (kg)</label>
+      <input type="number" id="quantity" required />
+
+      <label for="price">Price (₹)</label>
+      <input type="number" id="price" required />
+
+      <button type="submit">Place Order</button>
+    </form>
+  </div>
+
+  <h2 style="text-align:center; color:white;">All Orders</h2>
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Farmer Name</th>
+          <th>Fertilizer Type</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="orderTableBody"></tbody>
+    </table>
+  </div>
+
+  <script src="Script.js"></script>
+</body>
+</html>
