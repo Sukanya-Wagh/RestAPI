@@ -24,6 +24,7 @@ This is a mini project developed using **Spring Boot REST API** with a responsiv
 - HTML, CSS, JavaScript
 
 ---
+### 📁 Project Structure
 ```
 Fertilizer-Management-System/
 ├── src/
@@ -47,5 +48,5 @@ Fertilizer-Management-System/
 ```
 
 
-### 📁 Project Structure
+
 
