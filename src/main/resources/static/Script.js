@@ -1,34 +1,38 @@
-// Order Submit Function
-document.getElementById("orderForm").addEventListener("submit", function (e) {
+document.getElementById("orderForm").addEventListener("submit", function (e)
+                                                      {
   e.preventDefault();
 
-  const orderData = {
+  const orderData = 
+  {
     farmerName: document.getElementById("farmerName").value,
     fertilizerType: document.getElementById("fertilizerType").value,
     quantity: document.getElementById("quantity").value,
     price: document.getElementById("price").value
   };
 
-  fetch("http://localhost:9096/api/orders", {
+  fetch("http://localhost:9096/api/orders",
+        {
     method: "POST",
-    headers: {
+    headers: 
+    {
       "Content-Type": "application/json"
     },
     body: JSON.stringify(orderData)
   })
     .then(response => response.json())
-    .then(data => {
+    .then(data =>
+      {
       alert("Order placed successfully!");
       document.getElementById("orderForm").reset();
       fetchOrders(); // Refresh table
     })
-    .catch(error => {
+    .catch(error => 
+      {
       console.error("Error placing order:", error);
     });
 });
-
-// Fetch All Orders
-function fetchOrders() {
+function fetchOrders() 
+{
   fetch("http://localhost:9096/api/orders")
     .then(response => response.json())
     .then(data => {
@@ -62,10 +66,10 @@ function fetchOrders() {
       console.error("Error fetching orders:", error);
     });
 }
-
-// Update Status (Approve or Reject)
-function updateStatus(id, newStatus) {
-  fetch(`http://localhost:9096/api/orders/${id}/status`, {
+function updateStatus(id, newStatus)
+  {
+  fetch(`http://localhost:9096/api/orders/${id}/status`, 
+        {
     method: "PUT",
     headers: {
       "Content-Type": "application/json"
@@ -77,10 +81,9 @@ function updateStatus(id, newStatus) {
       alert("Status updated to " + newStatus);
       fetchOrders(); // Refresh table
     })
-    .catch(error => {
+    .catch(error =>
+      {
       console.error("Error updating status:", error);
     });
 }
-
-// Load orders initially
 window.onload = fetchOrders;
