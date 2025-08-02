@@ -24,6 +24,28 @@ This is a mini project developed using **Spring Boot REST API** with a responsiv
 - HTML, CSS, JavaScript
 
 ---
+```
+Fertilizer-Management-System/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── fertilizer/
+│   │   │           ├── Order.java
+│   │   │           ├── OrderController.java
+│   │   │           ├── OrderService.java
+│   │   │           ├── OrderRepository.java
+│   │   │           └── SystemApplication.java
+│   │   └── resources/
+│   │       ├── application.properties
+│   │       └── static/
+│   │           ├── index.html
+│   │           ├── style.css
+│   │           └── script.js
+├── pom.xml
+└── README.md
+```
+
 
 ### 📁 Project Structure
 
