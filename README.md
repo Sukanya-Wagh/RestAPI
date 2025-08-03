@@ -93,7 +93,7 @@ Fertilizer-Management-System/
 
 ---
 
-## 📞 Contact Me
+## 📞 Contact Me (For any queries or suggestion).
 
 - 👩‍💻 **Name**: Sukanya Govardhan Wagh  
 - 📧 **Email**: waghsukanya153@gmail.com  
