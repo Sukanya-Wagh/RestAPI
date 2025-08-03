@@ -1,5 +1,5 @@
 document.getElementById("orderForm").addEventListener("submit", function (e)
-                                                      {
+{
   e.preventDefault();
 
   const orderData = 
@@ -11,10 +11,10 @@ document.getElementById("orderForm").addEventListener("submit", function (e)
   };
 
   fetch("http://localhost:9096/api/orders",
-        {
+  {
     method: "POST",
     headers: 
-    {
+  {
       "Content-Type": "application/json"
     },
     body: JSON.stringify(orderData)
