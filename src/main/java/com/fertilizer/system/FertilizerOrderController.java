@@ -6,25 +6,28 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/orders")
-@CrossOrigin(origins = "http://127.0.0.1:5500") // ✅ Just this - nothing else needed
-public class FertilizerOrderController {
-
+@CrossOrigin(origins = "http://127.0.0.1:5500") 
+public class FertilizerOrderController 
+{
     @Autowired
     private FertilizerOrderRepository orderRepository;
 
     @PostMapping
-    public FertilizerOrder placeOrder(@RequestBody FertilizerOrder order) {
-        order.setStatus("Pending"); // default status
+    public FertilizerOrder placeOrder(@RequestBody FertilizerOrder order)
+    {
+        order.setStatus("Pending");
         return orderRepository.save(order);
     }
 
     @GetMapping
-    public List<FertilizerOrder> getAllOrders() {
+    public List<FertilizerOrder> getAllOrders() 
+    {
         return orderRepository.findAll();
     }
 
     @PutMapping("/{id}/status")
-    public FertilizerOrder updateOrderStatus(@PathVariable Long id, @RequestBody String status) {
+    public FertilizerOrder updateOrderStatus(@PathVariable Long id, @RequestBody String status)
+    {
         FertilizerOrder order = orderRepository.findById(id)
             .orElseThrow(() -> new RuntimeException("Order not found"));
         order.setStatus(status.replace("\"", ""));
