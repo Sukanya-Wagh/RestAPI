@@ -8,7 +8,6 @@ This is a mini project developed using **Spring Boot REST API** with a responsiv
 
 - Backend is developed using **Spring Boot**
 - **PostgreSQL** is used as the backend database
-- Followed **MVC Architecture**
 - Created REST API with responsive UI
 - Technologies used: Java + Spring Boot + PostgreSQL + HTML + CSS + JavaScript
 
