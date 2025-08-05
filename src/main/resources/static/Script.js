@@ -24,7 +24,7 @@ document.getElementById("orderForm").addEventListener("submit", function (e)
       {
       alert("Order placed successfully!");
       document.getElementById("orderForm").reset();
-      fetchOrders(); // Refresh table
+      fetchOrders();
     })
     .catch(error => 
       {
@@ -79,7 +79,7 @@ function updateStatus(id, newStatus)
     .then(res => res.json())
     .then(data => {
       alert("Status updated to " + newStatus);
-      fetchOrders(); // Refresh table
+      fetchOrders(); 
     })
     .catch(error =>
       {
