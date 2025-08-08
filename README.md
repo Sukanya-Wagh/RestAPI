@@ -94,7 +94,7 @@ Fertilizer-Management-System/
 
 ## 📞 Contact Me (For any queries or suggestion).
 
-- 👩‍💻 **Name**: Sukanya Govardhan Wagh  
-- 📧 **Email**: waghsukanya153@gmail.com  
-- 🔗 **GitHub**: [github.com/Sukanya-Wagh](https://github.com/Sukanya-Wagh)
+-  **Name**: Sukanya Govardhan Wagh  
+-  **Email**: waghsukanya153@gmail.com  
+-  **GitHub**: [github.com/Sukanya-Wagh](https://github.com/Sukanya-Wagh)
 
